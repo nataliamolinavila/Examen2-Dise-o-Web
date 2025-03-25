@@ -1,0 +1,316 @@
+
+/*Header y no tocar*/
+:root{
+	--color-aqua:#00d9d9;
+	--color-titulos:#000;
+	--color-contenido: #2d2d2d;
+	--bg-header:#000;
+	--bg-footer:#222222;
+}
+body{
+	color:var(--color-contenido);
+}
+
+header{
+	background-color: var(--bg-header);
+	padding: 20px 0;
+}
+
+/*Carousel*/
+.carousel-item {
+    height: 1200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    max-width: 1000px;
+}
+
+
+.carousel-content h2 {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+	margin-right: 100px;
+}
+
+
+.carousel-content p {
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 50px;
+    
+}
+
+
+.btn-container {
+    display: flex;
+    gap: 15px;
+	margin-bottom: 50px;
+	
+}
+
+.btn-transparent {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.btn-transparent:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Servicios */
+.services .service-box {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.service-box .icon {
+    font-size: 40px;
+    color: var(--color-aqua);
+    margin-bottom: 15px;
+}
+
+.service-box h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8); /* Título con opacidad suave */
+    margin-bottom: 0px;
+}
+
+.service-box p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6); 
+    line-height: 1.6;
+    margin-top: 10px; 
+}
+
+/* About Us */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px;
+}
+
+.image-container {
+  position: relative;
+  width: 40%;
+  margin-right: 20px; 
+}
+
+.image-container img {
+  	width: 90%;
+  	height: 80%;
+  	display: block;
+	transform: translateX(5%) translateY(-10%);
+	
+}
+
+.background-aqua {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background-color: aqua;
+  z-index: -1;
+}
+
+.text-content {
+  width: 55%;
+}
+
+.text-content h2 {
+	font-family: 'Montserrat', sans-serif;
+  	font-size: 2rem;
+  	margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: grey;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+	font-family: 'Raleway', sans-serif;
+  	font-size: 1rem;
+  	color: #333;
+  	line-height: 1.6;
+}
+
+/* doctores */
+#doctors {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#doctors h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#doctors p {
+    font-size: 1.1rem;
+    color: gray;
+}
+
+hr {
+    border: 1px solid gray;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.doctor-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.doctor {
+    text-align: center;
+}
+
+.doctor img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+
+.doctor h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.doctor p {
+    font-size: 1rem;
+    color: gray;
+}
+
+
+/*Testimonial */
+#testimonial {
+    background-color: #f0f0f0; 
+    text-align: center;
+    padding: 60px 20px;  
+    border-radius: 10px;
+    margin: 40px 0;
+    max-width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#testimonial p {
+	font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.icon-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+	 flex-direction: column;
+}
+
+.user-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.stars {
+    font-size: 1.5rem;
+    color: gold;
+}
+
+.star, .star-half {
+    margin-right: 5px;
+}
+
+.star-half {
+    color: gray; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer y no tocar*/
+footer{
+	background-color: var(--bg-footer);
+	color: #888;
+	padding: 30px 0;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: center;
+}
+footer p span{
+	color: var(--color-aqua);
+}
+footer #copy{
+	padding: 20px 0;
+	margin-top: 5%;
+	color: #fff;
+	border-top: 1px dashed rgba(255, 255, 255, 0.15);
+}
